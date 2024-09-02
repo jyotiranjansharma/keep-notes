@@ -1,0 +1,22 @@
+<form [formGroup]="editNotesForm" id="editForm" (ngSubmit)="editNote()" *ngIf="editNotesForm">
+    <div class="form-row row">
+        <div class="form-group col-md-4">
+            <label for="noteTitle">Title</label>
+            <input type="text" class="form-control" id="noteTitle" placeholder="Title" formControlName="title">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="noteCreation">Created By</label>
+            <input type="text" class="form-control" id="noteCreation" placeholder="Created by" formControlName="createdBy">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="noteType">Note Type</label>
+            <input type="text" class="form-control" id="noteType" placeholder="Note type" formControlName="noteType">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="noteDetails">Details</label>
+        <textarea type="text" class="form-control" id="noteDetails" placeholder="Details" formControlName="details"></textarea>
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-sm btn-dark">Update note</button>
+</form>

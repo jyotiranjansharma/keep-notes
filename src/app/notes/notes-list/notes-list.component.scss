@@ -1,0 +1,52 @@
+.blockquote-footer {
+    color: white;
+}
+.blockquote-footer::before {
+    content: "\2014 \00A0";
+}
+
+.Parentcontainer{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    // grid-auto-rows: 100px;
+    // grid-auto-columns: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(50px, auto);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.items{
+    // background-color: darkgoldenrod;
+    // border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.h-1-5 {
+    height: 1.5em;
+}
+
+.float-right {
+    float: right;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.searchBox {
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 7px;
+}
